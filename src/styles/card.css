@@ -1,0 +1,241 @@
+/* Estilo geral para a lista de filmes */
+.movie-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container que contém os cards de filmes */
+.movie-cards {
+    display: flex;
+    transition: transform 0.3s ease;
+    align-items: center;
+}
+
+/* Card de filme */
+.movie-card {
+    min-width: 220px;
+    margin: 10px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    height: 350px;
+    margin-bottom: 80px;
+}
+
+/* Efeito de hover no card */
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Container da lista de filmes */
+.movie-list-container {
+    position: relative;
+    text-align: center;
+   top: -150px; 
+    z-index: 10000;
+}
+
+/* Estilo do título "Lançamento" */
+.movie-list-title {
+    background-color: #1e1e1e;
+    width: 40%;
+    margin-left: 30%;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #ffcc00;
+    margin-top: 40px;
+    margin-bottom: 80px;
+     text-transform: capitalize;
+     
+   
+}
+
+/* Título do filme (sobrepondo a imagem) */
+.movie-title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 101;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Imagem do poster do filme */
+.movie-poster {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Efeito de hover na imagem: preto e branco + embaçado */
+.movie-card:hover .movie-poster {
+    filter: grayscale(100%) blur(5px); 
+}
+
+/* Descrição do filme sobre a imagem */
+.movie-description {
+    font-size: 10px;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 90%;
+    max-height: 90px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-box;
+    line-clamp: 3;
+    box-orient: vertical;
+    white-space: normal;
+}
+
+/* Exibe a descrição ao passar o mouse sobre o card */
+.movie-card:hover .movie-description {
+    opacity: 1;
+}
+
+/* Setas de navegação */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+/* Setas esquerda e direita */
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+
+
+/* Quando o modal estiver ativo */
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* Estilo para o modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Mantém o modal sobre outros elementos */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    z-index: 10000; /* Certificando-se de que o conteúdo esteja acima do fundo do modal */
+}
+
+/* Fechar botão */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    z-index: 10001; /* Garante que o botão de fechar seja visível */
+}
+
+/* Estilo da imagem */
+.modal-poster {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Conteúdo à direita (descrição, ano e nota) */
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+/* Estilo do GIF */
+.modal-gif {
+    width: 120px;
+    margin-top: 390px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.modal-title {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  

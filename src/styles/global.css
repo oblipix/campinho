@@ -1,0 +1,248 @@
+/* Resetando margens e padding padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+ 
+  font-size: 1.29rem;
+  width: 100%;
+  color: #ffcc00; 
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+/* Estilos para o título do site */
+.site-title {
+    letter-spacing: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    left: 30%;
+    top: 20px;
+    z-index: 2;
+    background: repeating-linear-gradient(
+        45deg,        
+        #ffffff,      
+        #ffffff 10px, 
+        #ff0000 10px, 
+        #ff0000 20px  
+    );
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.932);
+}
+
+
+
+/* Menu de Navegação */
+.navbar {
+    position: absolute;
+    left: 350px;
+    bottom: 220px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 101;
+    
+  }
+  
+  .nav-item {
+    
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;    
+      }
+  
+  
+  .nav-item:hover {
+    color: #ff1c1c;
+  }
+  
+  /* Estilos do Dropdown de Seções */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .nav-item,
+.dropbtn {
+    display: inline-block; 
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 10px 20px; 
+    border: none; 
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+
+
+
+.custom-image {
+    position: absolute;
+    top: -25px;
+    left: 980px;
+    width: 70%; 
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 20px auto; 
+    display: block; 
+  
+}
+
+  
+  
+  .dropbtn:hover {
+    color: #ff1c1c;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/src/img/droptn.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10001;
+    color: white; 
+    
+}
+
+  
+  .dropdown-content .nav-item {
+    padding: 10px ;
+    font-size: 10px;
+    color: #fff;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content .nav-item:hover {
+    color: #ff1c1c;
+  }
+  
+
+
+
+/* Estilo do container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Animação suave de transição entre páginas */
+.fade {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fonte de estilo */
+h1, h2, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+    left: 600px;
+    width: 30%;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+  .header-image {
+   
+    width: 40%; 
+    margin-left: -50px;
+    margin-top: -320px;
+    height: auto;
+    object-fit: cover; 
+    z-index: 10001;
+  }
+  
+
+
+
+/* Estilos para o Rodapé */
+.footer {
+    width: 100%;
+    height: 600px; 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .footer-image {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+  }
+  
