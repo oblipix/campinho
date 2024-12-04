@@ -1,4 +1,8 @@
 
+![Captura de tela 2024-12-04 194647](https://github.com/user-attachments/assets/04d2bb22-ca9e-43b2-bd11-2bed0ad3fa83)
+
+
+
 # 🎥 Filmes em Cartaz - Projeto React
 
 #### Descrição do Projeto
