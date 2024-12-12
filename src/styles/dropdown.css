@@ -1,0 +1,43 @@
+/* Estilos do Dropdown de Seções */
+.dropdown {
+    
+    position: relative;
+    display: inline-block;
+   
+   
+  }
+
+  .dropbtn:hover {
+    color: var(--selection-dropdown-collor);
+  }
+  
+  .dropdown-content {
+   
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/src/img/droptn.png'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;    
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10001;
+    color: var(--my-cool-background);
+    
+}
+
+  
+  .dropdown-content .nav-item {
+    padding: 10px ;
+    font-size: 10px;
+    color: var(--letters-card);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content .nav-item:hover {
+    color: var(--selection-dropdown-collor);
+  }
+  

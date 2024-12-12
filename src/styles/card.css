@@ -24,9 +24,9 @@
 .movie-card {
     min-width: 220px;
     margin: 10px;
-    background-color: #1e1e1e;
+    background-color: var(--titles-color);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden;
     position: relative;
@@ -36,32 +36,34 @@
     height: 350px;
     margin-bottom: 80px;
 }
-
 /* Efeito de hover no card */
 .movie-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 12px 20px rgba(169, 169, 169, 0.425);
 }
 
 /* Container da lista de filmes */
 .movie-list-container {
+    top: -200px;
     position: relative;
     text-align: center;
-   top: -150px; 
-    z-index: 10000;
+    z-index: 10001;
 }
 
 /* Estilo do título "Lançamento" */
 .movie-list-title {
+    
     background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px rgb(255, 255, 255);
     width: 40%;
     margin-left: 30%;
     font-size: 2rem;
     font-weight: normal;
-    color: #ffcc00;
+    color: var(--titles-color);
     margin-top: 40px;
     margin-bottom: 80px;
-     text-transform: capitalize;
+    text-transform: capitalize;
      
    
 }
@@ -73,7 +75,7 @@
     left: 0;
     z-index: 101;
     font-size: 12px;
-    color: #fff;
+    color: var(--letters-card);
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 5px 10px;
@@ -103,7 +105,7 @@
 /* Descrição do filme sobre a imagem */
 .movie-description {
     font-size: 10px;
-    color: #fff;
+    color: var(--letters-card);
     padding: 10px;
     position: absolute;
     top: 50%;
@@ -136,7 +138,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    color: #fff;
+    color: var(--letters-card);
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     padding: 10px;
@@ -184,7 +186,7 @@ body.modal-open {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    color: white;
+    color: var(--letters-card);
     position: relative;
     max-width: 800px;
     width: 90%;
@@ -202,7 +204,7 @@ body.modal-open {
     right: 20px;
     font-size: 2rem;
     cursor: pointer;
-    color: white;
+    color: var(--letters-card);
     z-index: 10001; /* Garante que o botão de fechar seja visível */
 }
 

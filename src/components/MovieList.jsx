@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+//import App from './App';
 import '/src/styles/card.css';
 
 const MovieList = ({ genre, movies, id }) => {

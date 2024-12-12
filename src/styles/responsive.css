@@ -1,0 +1,192 @@
+/* Responsividade para telas com largura máxima de 469px */
+@media (max-width: 469px) {
+    /* Ajustes no título do site */
+    .site-title {
+        letter-spacing: 10px;
+        font-size: 30px;
+        margin: 40px 0;
+    }
+
+   
+    .site-title {
+        font-size: 50px;
+        width: 100%;
+        margin-left: 20px;
+        
+    }
+
+    /* Ajustes no menu de navegação */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 300px;
+    }
+
+    .header-image {
+       
+        width: 100%;
+        height: auto;
+        background-size: cover;
+       
+    }
+
+   
+      
+
+
+
+    .div-navbar {
+        display: none;
+    }
+
+  
+
+    /* Ajustes no rodapé */
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajustes no corpo */
+    body {
+        padding: 0 5px;
+        background-size: 350px;
+        font-size: 12px;
+    }
+
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    /* Ajustes no fade */
+    .fade {
+        animation: fadeIn 1s ease-out;
+    }
+
+    
+    /* Ajustes na lista de filmes */
+    .movie-list {
+        flex-direction: column;
+        width: 80%;
+        max-width: 100%;
+        
+        margin-bottom: 80px;
+    }
+
+    /* Ajustes nos cards de filmes */
+    .movie-card {
+        
+        min-width: 150px;
+        height: 250px;
+        margin: 5px;
+    }
+
+    .movie-title {
+        
+        font-size: 10px;
+    }
+
+    /* Ajustes na descrição do filme */
+    .movie-description {
+        font-size: 8px;
+        padding: 5px;
+        width: 90%;
+    }
+
+    /* Ajustes nas setas de navegação */
+    .arrow {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .arrow-left {
+        left: 10px;
+    }
+
+    .arrow-right {
+        right: 10px;
+    }
+
+    /* Ajustes no modal */
+    body.modal-open {
+        overflow: hidden;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: #222;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left;
+        color: var(--letters-card);
+        position: relative;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .close-button {
+        font-size: 2rem;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: var(--letters-card);
+    }
+
+    .modal-poster {
+        width: 120px;
+        height: auto;
+    }
+
+    .modal-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        font-size: 10px;
+    }
+
+    .modal-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .modal-gif {
+        width: 80px;
+        margin-top: 10px;
+    }
+}
+/* Remove a imagem de fundo em telas menores que 1024px */
+@media (max-width: 1024px) {
+    body {
+      background-image: none; /* Remove a imagem de fundo */
+    }
+  }
