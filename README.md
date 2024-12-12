@@ -20,7 +20,6 @@ Este projeto é uma aplicação web que permite aos usuários explorar filmes ut
 
 - HTML
 - CSS
-- JavaScript
 - [API da TMDB](https://developers.themoviedb.org/3)
 - React Vite
 
