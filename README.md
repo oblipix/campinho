@@ -1,6 +1,6 @@
 
 
-# Projeto de Filmes com API da TMDB
+# Projeto CineStream com API da TMDB
 
 ![Captura de tela 2024-12-11 224408](https://github.com/user-attachments/assets/4486bde0-ae2a-4465-a007-7dc59472866d)
 
